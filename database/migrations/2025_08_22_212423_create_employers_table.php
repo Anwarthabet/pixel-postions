@@ -15,10 +15,12 @@ return new class extends Migration
             $table->id();
                $table->foreignIdFor(App\Models\User::class)->constrained()->onDelete('cascade');
             $table->string('name');
-            $table->string('email')->unique();
+            $table->string('email')->uniclsque();
             $table->string('phone')->nullable();
             $table->string('address')->nullable();  
-               $table->string('logo');
+            $table->string('website');
+
+               $table->string('logo')->default('images/no-image.png');
             $table->timestamps();
         });
     }
