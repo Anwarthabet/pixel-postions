@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('email')->uniclsque();
             $table->string('phone')->nullable();
             $table->string('address')->nullable();  
-            $table->string('website');
+        $table->string('website')->nullable();
 
                $table->string('logo')->default('images/no-image.png');
             $table->timestamps();
