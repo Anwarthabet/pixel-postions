@@ -24,7 +24,7 @@
                     />
                 </div>
 
-                <!-- Row 2: Password & Confirm Password -->
+                <!-- Row 2: Password & Confirm jdkjfhdlkgjdhklPassword -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <x-forms.input 
                         name="password" 
@@ -60,7 +60,7 @@
                 </div>
 
                 <x-forms.button class="w-full mt-4">
-                    Register
+                    Create Account
                 </x-forms.button>
             </x-forms.form>
 
