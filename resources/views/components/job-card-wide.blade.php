@@ -1,0 +1,21 @@
+@props(['job'])
+<div class="w-full p-4 bg-black/5 rounded-xl flex gap-x-6 items-center text-gray-700 mb-4  transition duration-300 hover:bg-black/10 hover:shadow-lg hover:-translate-y-1">
+    <div class="shrink-0">
+      <x-employer-logo />
+    </div>
+
+    <!-- Content -->
+    <div class="flex-1">
+        <a href="#" class="block text-sm text-gray-400">{{$job->employer->name}}</a>
+        <h3 class="text-lg font-semibold">{{$job->title}}</h3>
+        <p class="text-sm">{{$job->salary}}</p>
+    </div>
+
+    <!-- Tags -->
+    <div class="flex gap-2">
+         @foreach ($job as $tag)
+            <x-tag :$tag></x-tag>
+            @endforeach
+    
+    </div>
+</div>
