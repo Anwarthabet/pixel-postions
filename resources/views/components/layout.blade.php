@@ -28,7 +28,21 @@
             <a href="#">Companies</a>      
         </div>
         <div>
-            <a href="#">Post Job</a>
+            @auth
+              <div class="flex space-x-6">
+            <a href="/job">Jobs</a>
+            
+        </div>
+            @ENDAUTH
+
+            @guest
+  <div class="flex space-x-6">
+            <a href="/register">Sign Up</a>
+            <a href="/login">Login in</a>  
+         
+        </div>
+            @ENDGUEST
+
         </div>
         </nav>
     </div>

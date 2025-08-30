@@ -3,14 +3,10 @@
     <dev class="space-y-10">
         <section class="text-center pt-6">
     <h1 class="font-bold text-4xl">Let's Find Your Next Job</h1>
-
-    <form action="" class="mt-6">
-        <input 
-            type="text" 
-            placeholder="Web PDeveloper..." 
-            class="rounded-xl bg-black/10 border border-white/10 px-5 py-4 w-full max-w-xl mx-auto block text-gray-800 placeholder-gray-500"
-        >
-    </form>
+<x-forms.form action="/search" class="mt-6">
+    <x-forms.input  name="q" :label="false" type="text" placeholder="Search for jobs, companies, or keywords"  class="w-full md:w-1/2">
+    </x-forms.input>
+</x-forms.form>
 </section>
 
     <section class="mt-16 space-y-6 ">
@@ -39,5 +35,5 @@
             <x-job-card-wide :$job/>    
             @endforeach
     </section>
-    </dev>
+</div>
 </x-layout>
