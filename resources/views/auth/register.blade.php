@@ -2,9 +2,7 @@
     <div class="flex items-center justify-center h-screen">
         <div class="w-full max-w-2xl bg-white rounded-2xl shadow-lg p-8">
             <x-page-heading class="text-center mb-6">Register</x-page-heading>
-
-   ssh-keygen -t ed25519 -C "anwar773bs@gmail.com
-"          <x-forms.form method="POST" action="/register" enctype="multipart/form-data" class="space-y-4">
+             <x-forms.form method="POST" action="/register" enctype="multipart/form-data" class="space-y-4">
                 @csrf
 
                 <!-- Row 1: Name & Email -->
