@@ -4,7 +4,6 @@
     <div class="flex justify-between items-center mb-4">
         <div class="self-start text-sm">
             {{ $job->Employer->name }}
-
         </div>
     </div>
 

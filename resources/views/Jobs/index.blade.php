@@ -7,7 +7,7 @@
     <form action="" class="mt-6">
         <input 
             type="text" 
-            placeholder="Web Developer..." 
+            placeholder="Web PDeveloper..." 
             class="rounded-xl bg-black/10 border border-white/10 px-5 py-4 w-full max-w-xl mx-auto block text-gray-800 placeholder-gray-500"
         >
     </form>
